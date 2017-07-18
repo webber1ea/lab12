@@ -2,14 +2,11 @@
 <html ng-app="lab12" lang="en">
 <head>
   <title> To-Do List</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body ng-controller="lab12Ctrl">
 
-<input type="text" ng-model="tasks" placeholder="Add Task Here">
-
-<input type="text" ng-model="search" placeholder="Search">
-
-<button ng-click="addTo(tasks)"type="button">Add</button>
 
 <!-- <p ng-model="usersTask"> {{ tasks }} </p> -->
 
@@ -18,6 +15,11 @@
   <ul>
     <li ng-repeat="tasks in toDoList | filter: search"> {{ tasks }} </li>
   </ul>
+
+  <input type="text" class="addTask" ng-model="tasks" placeholder="Add Task Here"> <button ng-click="addTo(tasks)"type="button">Add</button>
+</br>
+  <input type="text" class="searchIt" ng-model="search" placeholder="Search">
+</br>
 </div>
 
 
