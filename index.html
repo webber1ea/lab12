@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="lab12" lang="en">
+<head>
+  <title> To-Do List</title>
+</head>
+<body ng-controller="lab12Ctrl">
+
+<input type="text" ng-model="tasks" placeholder="Add Task Here">
+
+<input type="text" ng-model="search" placeholder="Search">
+
+<button ng-click="addTo(tasks)"type="button">Add</button>
+
+<!-- <p ng-model="usersTask"> {{ tasks }} </p> -->
+
+<h1>To Do List </h1>
+<div class="list">
+  <ul>
+    <li ng-repeat="tasks in toDoList | filter: search"> {{ tasks }} </li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
