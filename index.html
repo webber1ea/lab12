@@ -2,7 +2,7 @@
 <html ng-app="lab12" lang="en">
 <head>
   <title> To-Do List</title>
-
+  <meta name+"viewport" content="width=device-width, inital-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body ng-controller="lab12Ctrl">
@@ -10,7 +10,7 @@
 
 <!-- <p ng-model="usersTask"> {{ tasks }} </p> -->
 
-<h1>To Do List </h1>
+<!-- <h1>To Do List </h1> -->
 <div class="list">
   <ul>
     <li ng-repeat="tasks in toDoList | filter: search"> {{ tasks }} </li>

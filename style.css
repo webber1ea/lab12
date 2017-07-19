@@ -1,26 +1,34 @@
 html {
-  background: tan;
+  background-image: url(PatrickStar.png);
+  background-repeat:no-repeat;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
-
+/*
 h1 {
   text-align: center;
   font-family: Georgia;
 
-}
+}*/
 
-.list {
+.list{
   font-family: Georgia;
-  margin: 0 auto;
+  float: left;
   border: 1px solid black;
-  width: 40%;
+  width: 30%;
   background-color: white;
   padding-bottom: 10px;
   padding-left: 20px;
+  padding-top: 10px;
+  margin-top: 5%;
 }
 
 .addTask {
   text-align: center;
   margin: 0 auto;
+  width: auto;
 }
 
 .searchIt {
