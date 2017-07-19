@@ -14,7 +14,7 @@
 <!-- <h1>To Do List </h1> -->
 <div class="list">
   <ul>
-    <li ng-repeat="tasks in toDoList | filter: search"> {{ tasks }} </li>
+    <li ng-repeat="tasks in toDoList | filter: search"> {{ tasks }} <div class='deleteMe' onclick='deleteMe(tasks)'>X</div></li>
   </ul>
 
   <input type="text" class="addTask" ng-model="tasks" placeholder="Add Task Here"> <button ng-click="addTo(tasks)"type="button">Add</button>

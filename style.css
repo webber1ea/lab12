@@ -27,6 +27,14 @@ html {
   margin-top: 5%;
 }
 
+.deleteMe{
+    float: right;
+    background: red;
+    color: white;
+    padding-right: 10px;
+    width: 10px;
+}
+
 .addTask {
   text-align: center;
   margin: 0 auto;

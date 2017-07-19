@@ -13,5 +13,10 @@ $scope.addTo = function(usersTask){
 $scope.removeTask = function(task){
   $scope.toDoList.splice(task, 1)
 
+$(document).ready(function(){
+  $(".deleteMe").on("click", function () {
+    $(this).closest("li").remove();
+  });
+});
 };
 });
