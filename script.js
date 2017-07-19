@@ -10,7 +10,8 @@ $scope.addTo = function(usersTask){
 };
 
 
-$scope.remove = function(index){
-  $scope.toDoList.splice(index, 1)
+$scope.removeTask = function(task){
+  $scope.toDoList.splice(task, 1)
+
 };
 });
